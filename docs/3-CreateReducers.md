@@ -79,7 +79,7 @@ function reducer(state = {}, action) {
 > - [ ] The default state is not returned
 > - [ ] The switch statement is checking the incorrect expression
 > - [ ] The switch statement is incorrectly formatted
-> - [ ] It mutates the previous state
+> - [x] It mutates the previous state
 > - [ ] It doesn't account for all action types
 
 Now it's time to create a reducer on your own!
@@ -100,22 +100,7 @@ Now it's time to create a reducer on your own!
 */
 
 
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
+
 
 ```
 
@@ -135,6 +120,24 @@ Now it's time to create a reducer on your own!
  * [{ flavor: 'Chocolate', count: 36 }, { flavor: 'Vanilla', count: 210 }];
 */
 
+/*my code below: */
+let appState = [
+    {flavor: 'Vanilla', count: 210},
+    {flavor: 'Chocolate', count: 36}
+    ];
+const appAction = {type: 'DELETE_FLAVOR', flavor: 'Vanilla'};
+
+
+const appReducer = (state, action) => {
+    switch (action.type) {
+        case 'DELETE_FLAVOR': 
+            return state.filter(obj => obj.flavor !== action.flavor);
+        default : 
+            return state;
+    }
+}
+
+console.log(appReducer(appState, appAction));
 ```
 
 ## Quiz Solution: Create a Reducer
@@ -185,14 +188,14 @@ Here's the [commit](https://github.com/udacity/reactnd-udacimeals-complete/commi
 How does your reducer look? Please confirm the following:
 > Task List
 >
-> - [ ] I have created an `index.js` file inside a `reducers` folder in my `src` directory
-> - [ ] I have imported the two `actions` created
-> - [ ] I have created an `initialCalendarState` object
-> - [ ] My `calendar` reducer function takes in `state` (with a default parameter of `initialCalendarState` ) and an `action`
-> - [ ] My `calendar` reducer function handles both adding recipes as well as removing them from the calendar
-> - [ ] My `calendar` reducer function **does not** mutate state directly
-> - [ ] My `calendar` reducer function returns the initial state by default
-> - [ ] I have exported the `calendar` reducer function
+> - [x] I have created an `index.js` file inside a `reducers` folder in my `src` directory
+> - [x] I have imported the two `actions` created
+> - [x] I have created an `initialCalendarState` object
+> - [x] My `calendar` reducer function takes in `state` (with a default parameter of `initialCalendarState` ) and an `action`
+> - [x] My `calendar` reducer function handles both adding recipes as well as removing them from the calendar
+> - [x] My `calendar` reducer function **does not** mutate state directly
+> - [x] My `calendar` reducer function returns the initial state by default
+> - [x] I have exported the `calendar` reducer function
 > 💡 Data Normalization 💡
 > 
 > How should you format your data when it's needed in different places? For one, you can make sure your data is **normalized**. Don’t worry about it too much for now. We’ll get to data normalization in a later Lesson!
@@ -218,3 +221,6 @@ function myReducer (state = initialState, action) {
 }
 ```
 Store your state in Redux if two components rely on the same piece of state, or if the operation to get that state was expensive.
+
+## Further Reading: 
+[Spread Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
