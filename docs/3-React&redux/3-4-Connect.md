@@ -125,11 +125,11 @@ How are things looking so far?
 
 #### Task List
 
-- [ ] I have imported `connect()` from `react-redux` into `App.js`
-- [ ] I have imported the `addRecipe` and `removeFromCalendar` actions into `App.js`
-- [ ] I have created the `mapStateToProps` function
-- [ ] I have created the `mapDispatchToProps` function
-- [ ] I have used `connect()` to curry and return a function that takes in `App`
+- [x] I have imported `connect()` from `react-redux` into `App.js`
+- [x] I have imported the `addRecipe` and `removeFromCalendar` actions into `App.js`
+- [x] I have created the `mapStateToProps` function
+- [x] I have created the `mapDispatchToProps` function
+- [x] I have used `connect()` to curry and return a function that takes in `App`
 
 ### QUESTION 1 OF 3
 
@@ -137,10 +137,10 @@ How are things looking so far?
 
 - [ ] Action
 - [ ] Action creator
-- [ ] Store
+- [x] Store
 - [ ] Reducer
 - [ ] API util
-- [ ] Component
+- [x] Component
 
 ### QUESTION 2 OF 3
 
@@ -148,7 +148,7 @@ Consider a simple React component, **`MyComponent`**. How does `MyComponent` acc
 
 - [ ] The entire store is passed in to `connect()`, which is curried along with `MyComponent`
 - [ ] The only way is to pass the store down from parent to child component until it reaches `MyComponent`
-- [ ] A container component connects the store to `MyComponent`, giving `MyComponent` slices of state accessible via props
+- [x] A container component connects the store to `MyComponent`, giving `MyComponent` slices of state accessible via props
 - [ ] `MyComponent` can access state via `this.state`, since all state should always be stored in the component itself in Redux apps
 
 ### QUESTION 3 OF 3
@@ -172,11 +172,11 @@ export default connect(
 )(ContactForm);
 ```
 
-- [ ] `fullName`
+- [x] `fullName`
 - [ ] `mapDispatchToProps`
 - [ ] `mapStateToProps`
 - [ ] `contact`
-- [ ] `handleAdd`
+- [x] `handleAdd`
 - [ ] `the entire state`
 
 ## Connect Recap
