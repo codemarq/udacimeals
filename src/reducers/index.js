@@ -1,13 +1,17 @@
+import { combineReducers } from 'redux';
+
 import {
   ADD_RECIPE,
   REMOVE_FROM_CALENDAR
 } from '../actions';
 
+// eslint-disable-next-line
 function food (state={}, action) {
   switch (action.type) {
     case 'ADD_RECIPE' :
       const { recipe } = action
       return {
+        // object spread syntax
         ...state,
         [recipe.label]: recipe
       }
@@ -80,4 +84,7 @@ function calendar (state = initialCalendarState, action ) {
   }
 }
 
-export default calendar;
+export default combineReducers({
+  food,
+  calendar,
+})
