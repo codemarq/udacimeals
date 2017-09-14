@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
-import '../App.css';
-import { connect } from 'react-redux';
-import { addRecipe, removeFromCalendar } from '../actions';
-import { capitalize } from '../utils/helper';
-import CalendarIcon from 'react-icons/lib/fa/calendar-plus-o';
+import React, { Component } from 'react'
+import '../App.css'
+import { connect } from 'react-redux'
+import { addRecipe, removeFromCalendar } from '../actions'
+import { capitalize } from '../utils/helper'
+import CalendarIcon from 'react-icons/lib/fa/calendar-plus-o'
+import Modal from 'react-modal'
+import Loading from 'react-loading'
+import ArrowRightIcon from 'react-icons/lib/fa/arrow-circle-right'
+import { fetchRecipes } from '../utils/api'
+import FoodList from './FoodList'
+
 
 
 class App extends Component {
   render() {
-    const { calendar, remove } = this.props;
-    const mealOrder = ['breakfast', 'lunch', 'dinner'];
+    const { calendar, remove } = this.props
+    const mealOrder = ['breakfast', 'lunch', 'dinner']
 
     return (
       <div className='container'>
@@ -45,12 +51,12 @@ class App extends Component {
             </div>
           </div>
       </div>    
-    );
+    )
   }
 }
 
 function mapStateToProps ({ calendar, food }) {
-  const dayOrder = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  const dayOrder = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 
   return {
     calendar: dayOrder.map((day) => ({
@@ -72,4 +78,4 @@ function mapDispatchToProps (dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App)

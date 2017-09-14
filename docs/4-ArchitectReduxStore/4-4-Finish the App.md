@@ -12,17 +12,17 @@ Getting close to the finish line! Let's check in the project:
 
 #### Task List
 
-- [ ] I have installed `react-icons`
-- [ ] I have imported `CalendarIcon` from `react-icons/lib/fa/calendar-plus-o`
-- [ ] I have imported the `capitalize()` function from `../utils/helpers`
-- [ ] I have updated the App component's `render()` method
-- [ ] I have updated `index.css` with the style sheet [here](https://github.com/udacity/reactnd-udacimeals-complete/blob/master/src/index.css)
+- [x] I have installed `react-icons`
+- [x] I have imported `CalendarIcon` from `react-icons/lib/fa/calendar-plus-o`
+- [x] I have imported the `capitalize()` function from `../utils/helpers`
+- [x] I have updated the App component's `render()` method
+- [x] I have updated `index.css` with the style sheet [here](https://github.com/udacity/reactnd-udacimeals-complete/blob/master/src/index.css)
 
 ## Edamam API Keys
 To continue, you’ll need to register with Edamam to get an API key for searching recipes. This is free and shouldn’t take too long. You can register for the free plan on the [Edamam developer site](https://developer.edamam.com/edamam-recipe-api).
 
 Once you have registered, place your unique ID and API key in a [`.env`](https://github.com/udacity/reactnd-udacimeals-complete/blob/823876c8e3b669c0338f630fa50120adb7168f6f/.env) file located in the root directory of your project.
-Before we jump in, here are the components and methods that we review in the following video:
+Before we jump in, here are the components and methods that we review in the following [video](https://youtu.be/Jqq2Ig4BaTo):
 
 - [The `FoodList` component](https://github.com/udacity/reactnd-udacimeals-complete/blob/823876c8e3b669c0338f630fa50120adb7168f6f/src/components/FoodList.js)
 - [The Modal methods and JSX](https://github.com/udacity/reactnd-udacimeals-complete/blob/823876c8e3b669c0338f630fa50120adb7168f6f/src/components/App.js)
