@@ -32,15 +32,15 @@ Almost there! Let's make sure we're on the same page.
 
 #### Task List
 
-- [ ] I have received a unique ID and API key from Edamam
-- [ ] I have installed `react-loading`
-- [ ] I have installed `react-modal`
-- [ ] I have restarted my development server
-- [ ] I have imported all necessary assets
-- [ ] I have added local component state to `App`
-- [ ] I have created the `openFoodModal`, `closeFoodModal`, and `searchFood` methods
-- [ ] I have updated the `App` component's `render()` method
-- [ ] The `render()` method for `App` also renders the `FoodList` component (as seen here in this [commit](https://github.com/udacity/reactnd-udacimeals-complete/blob/823876c8e3b669c0338f630fa50120adb7168f6f/src/components/FoodList.js)).
+- [x] I have received a unique ID and API key from Edamam
+- [x] I have installed `react-loading`
+- [x] I have installed `react-modal`
+- [x] I have restarted my development server
+- [x] I have imported all necessary assets
+- [x] I have added local component state to `App`
+- [x] I have created the `openFoodModal`, `closeFoodModal`, and `searchFood` methods
+- [x] I have updated the `App` component's `render()` method
+- [x] The `render()` method for `App` also renders the `FoodList` component (as seen here in this [commit](https://github.com/udacity/reactnd-udacimeals-complete/blob/823876c8e3b669c0338f630fa50120adb7168f6f/src/components/FoodList.js)).
 
 Just as with the `FoodList` component, feel free to also review the [`ShoppingList` component](https://github.com/udacity/reactnd-udacimeals-complete/blob/0e343838ef120c458f3b3b4a5de74dbc167be4d6/src/components/`ShoppingList`.js) referenced in the following [video](https://youtu.be/lD9AzyREDOw).
 
@@ -48,7 +48,7 @@ Here's the [commit](https://github.com/udacity/reactnd-udacimeals-complete/commi
 
 ### Final check-in!
 #### Task List
-- [ ] I have imported the `ShoppingList` component
+- [x] I have imported the `ShoppingList` component
 - [ ] I have updated local component state with a `ingredientsModalOpen` property
 - [ ] I have created the `openIngredientsModal`, `closeIngredientsModal`, and generate`ShoppingList` methods
 - [ ] I have updated the `App` component's `render()` method
