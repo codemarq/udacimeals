@@ -74,6 +74,7 @@ class App extends Component {
 
     return (
       <div className='container'>
+      
         <div className='nav'>
           <h1 className='header'>Udacimeals</h1>
           <button
@@ -93,22 +94,22 @@ class App extends Component {
         </ul>
 
           <div className='calendar'>
-            <div className='days'>
+          <div className='days'>
               {calendar.map(({ day }) => <h3 key={day} className='subheader'>{capitalize(day)}</h3>)}
             </div>
             <div className='icon-grid'>
               {calendar.map(({ day, meals }) => (
                 <ul key={day}>
-                  {mealOrder.map((meal) => (
-                    <li key={meal} className='meal'>
-                      {meals[meal] 
-                        ? <div className='food-item'>
-                            <img src={meals[meal].image} alt={meals[meal].label} />
-                            <button onClick={() => remove({meal, day})}>Clear</button>
-                          </div> 
-                        : <button className='icon-btn' onClick={() => this.openFoodModal({meal, day})}>
-                            <CalendarIcon size={30} />
-                          </button>}
+                {mealOrder.map((meal) => (
+                  <li key={meal} className='meal'>
+                    {meals[meal] 
+                      ? <div className='food-item'>
+                          <img src={meals[meal].image} alt={meals[meal].label} />
+                          <button onClick={() => remove({meal, day})}>Clear</button>
+                        </div> 
+                      : <button className='icon-btn' onClick={() => this.openFoodModal({meal, day})}>
+                          <CalendarIcon size={30} />
+                        </button>}
                     </li>
                   ))}
                 </ul>
