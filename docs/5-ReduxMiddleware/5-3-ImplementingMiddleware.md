@@ -33,3 +33,20 @@ npm install --save redux-logger
 ```
 
 The `redux-logger` package comes with default options out-of-the-box, but feel free to add [further customizations](https://github.com/evgenyrodionov/redux-logger#options) as needed!
+
+### QUIZ QUESTION
+
+What is true about applying middleware to a Redux store? Check all that apply.
+
+- [ ] Redux apps can only apply one type of middleware to the store
+- [ ] `applyMiddleware()` can accept multiple arguments via a currying pattern
+- [x] Middleware is optional when instantiating a Redux store
+- [x] Middleware like **logger** can be considered as a third-party extension point between dispatching an action and having that action reaches the reducer
+
+## Summary
+
+We apply middleware in one centralized location in Redux apps: when creating a store. The `createStore()` method takes in a required `reducer`, but we can also pass in an optional `enhancer` argument. This argument is Redux’s `applyMiddleware()` function, which can take in multiple instances of middleware itself.
+
+## Further Reading
+
+- [redux-logger](https://github.com/evgenyrodionov/redux-logger)
